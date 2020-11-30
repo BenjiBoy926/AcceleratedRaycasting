@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Half\half.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\c3a050c69575f2dc08331da0d75c005e\eLut.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\c3a050c69575f2dc08331da0d75c005e\toFloat.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Half\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{03C6B3D6-7A2A-31CC-9262-6E0123475ED9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3D07A444-1CFC-3EF4-86B9-DAEB1977E19E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

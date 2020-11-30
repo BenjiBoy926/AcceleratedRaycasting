@@ -1,0 +1,1 @@
+C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\nanogui\ext_build\glfw\src\glfw_objects.dir\RelWithDebInfo\glfw_objects.lib

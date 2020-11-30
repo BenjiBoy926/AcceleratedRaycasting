@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E83CE857-57CC-3047-8B44-8330E9164931}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tinyformat;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\eigen;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Imath;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Iex;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Half;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\OpenEXR\IlmImf;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\OpenEXR\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tbb\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pcg32;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pugixml\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\hypothesis;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glfw\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glew\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glad\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\filesystem;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\example;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tinyformat;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\eigen;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Imath;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Iex;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Half;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\OpenEXR\IlmImf;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\OpenEXR\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tbb\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pcg32;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pugixml\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\hypothesis;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glfw\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glew\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glad\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\filesystem;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\example;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tinyformat;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\eigen;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Imath;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Iex;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Half;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\OpenEXR\IlmImf;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\OpenEXR\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tbb\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pcg32;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pugixml\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\hypothesis;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glfw\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glew\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glad\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\filesystem;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\example;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tinyformat;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\eigen;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Imath;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Iex;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Half;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\OpenEXR\IlmImf;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\OpenEXR\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tbb\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pcg32;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pugixml\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\hypothesis;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glfw\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glew\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glad\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\filesystem;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\example;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/nori_codebase/nori/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/nori_codebase/nori -BC:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/pa3 --check-stamp-file C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/pa3/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeCCompiler.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeCXXCompiler.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeRCCompiler.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/nori_codebase/nori/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/nori_codebase/nori -BC:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/pa3 --check-stamp-file C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/pa3/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeCCompiler.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeCXXCompiler.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeRCCompiler.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/nori_codebase/nori/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/nori_codebase/nori -BC:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/pa3 --check-stamp-file C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/pa3/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeCCompiler.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeCXXCompiler.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeRCCompiler.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/nori_codebase/nori/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/nori_codebase/nori -BC:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/pa3 --check-stamp-file C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/pa3/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeCCompiler.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeCXXCompiler.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeRCCompiler.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ZERO_CHECK.vcxproj">
+      <Project>{BA9D0097-ED1A-3AA9-9CE8-CB060D9E1D62}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\Half\Half.vcxproj">
+      <Project>{F92D931B-7109-38FF-B82F-A20698117D00}</Project>
+      <Name>Half</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\Iex\Iex.vcxproj">
+      <Project>{65B7E1BB-1A8F-3CBE-BB7F-E80CFE7BB7CF}</Project>
+      <Name>Iex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\IexMath\IexMath.vcxproj">
+      <Project>{D9552CCE-E958-3B35-BDBF-468F19E1440F}</Project>
+      <Name>IexMath</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\OpenEXR\IlmImf\IlmImf.vcxproj">
+      <Project>{C04756F6-918B-3D9E-91EC-ABC9CB7EB1FC}</Project>
+      <Name>IlmImf</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\OpenEXR\IlmImf\IlmImf-obj.vcxproj">
+      <Project>{5A2E4908-E9E1-3C37-8B2E-ECDC3A3562C7}</Project>
+      <Name>IlmImf-obj</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\IlmThread\IlmThread.vcxproj">
+      <Project>{4B130627-9C63-3706-9527-715B93DA63AB}</Project>
+      <Name>IlmThread</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\Imath\Imath.vcxproj">
+      <Project>{FEF83348-0872-3F46-9880-0724C42F31A8}</Project>
+      <Name>Imath</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\OpenEXR\IlmImf\b44ExpLogTable.vcxproj">
+      <Project>{33B27F1A-7FC8-3DE7-92E6-461386606EBB}</Project>
+      <Name>b44ExpLogTable</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\OpenEXR\IlmImf\dwaLookups.vcxproj">
+      <Project>{E41F304D-4286-3014-962D-778C8493FF19}</Project>
+      <Name>dwaLookups</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\Half\eLut.vcxproj">
+      <Project>{AE55B373-4E70-3C74-A159-4BD9BF4A4450}</Project>
+      <Name>eLut</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\nanogui\ext_build\glfw\src\glfw_objects.vcxproj">
+      <Project>{336EE6F5-1794-33C4-945B-F72179A2A307}</Project>
+      <Name>glfw_objects</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\nanogui\nanogui.vcxproj">
+      <Project>{C5720600-3B9D-3FF0-9FC6-0D75A27C72AE}</Project>
+      <Name>nanogui</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\nanogui\nanogui-obj.vcxproj">
+      <Project>{F3CD7ECF-A0C2-3B95-9F66-778B63337983}</Project>
+      <Name>nanogui-obj</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\nori.vcxproj">
+      <Project>{6EA33809-E28C-3840-8E8B-732710C44F10}</Project>
+      <Name>nori</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\pugixml.vcxproj">
+      <Project>{CFC59AEB-B17C-31F2-8C28-638671859582}</Project>
+      <Name>pugixml</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\tbb\tbb_static.vcxproj">
+      <Project>{92E0FE8B-F53A-3CEF-A931-9F37C3A3E300}</Project>
+      <Name>tbb_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\Half\toFloat.vcxproj">
+      <Project>{73E624F0-4911-3739-B9E2-A3EB763607D4}</Project>
+      <Name>toFloat</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\warptest.vcxproj">
+      <Project>{A2275781-04C2-34A9-84D4-8B9A85A8C0D9}</Project>
+      <Name>warptest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\zlib\zlibstatic.vcxproj">
+      <Project>{40E54DE8-79F6-30E4-8894-DB24D82DDE7C}</Project>
+      <Name>zlibstatic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

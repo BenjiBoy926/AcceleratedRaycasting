@@ -1,0 +1,508 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UnitTest|x64">
+      <Configuration>UnitTest</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6EA33809-E28C-3840-8E8B-732710C44F10}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>nori</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">nori.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">nori</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='UnitTest|x64'">C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">nori.dir\Release\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='UnitTest|x64'">nori.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">nori</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='UnitTest|x64'">nori</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='UnitTest|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='UnitTest|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='UnitTest|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">nori.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">nori</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">nori.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">nori</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tinyformat;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\eigen;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Imath;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Iex;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Half;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\OpenEXR\IlmImf;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\OpenEXR\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tbb\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pcg32;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pugixml\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\hypothesis;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glfw\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glew\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glad\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\filesystem;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\example;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NANOGUI_GLAD;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NANOGUI_GLAD;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tinyformat;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\eigen;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Imath;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Iex;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Half;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\OpenEXR\IlmImf;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\OpenEXR\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tbb\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pcg32;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pugixml\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\hypothesis;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glfw\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glew\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glad\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\filesystem;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\example;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NANOGUI_GLAD;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tinyformat;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\eigen;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Imath;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Iex;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Half;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\OpenEXR\IlmImf;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\OpenEXR\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tbb\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pcg32;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pugixml\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\hypothesis;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glfw\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glew\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glad\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\filesystem;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\example;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tinyformat;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\eigen;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Imath;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Iex;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Half;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\OpenEXR\IlmImf;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\OpenEXR\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tbb\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pcg32;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pugixml\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\hypothesis;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glfw\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glew\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glad\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\filesystem;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\example;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ext_build\tbb\Debug\tbb_static.lib;ext_build\Debug\pugixml.lib;ext_build\openexr\OpenEXR\IlmImf\Debug\IlmImf.lib;ext_build\nanogui\Debug\nanogui.lib;opengl32.lib;ext_build\zlib\Debug\zlibstatic.lib;ext_build\openexr\IlmBase\Half\Debug\Half.lib;ext_build\openexr\IlmBase\Imath\Debug\Imath.lib;ext_build\openexr\IlmBase\IlmThread\Debug\IlmThread.lib;ext_build\openexr\IlmBase\Iex\Debug\Iex.lib;ext_build\zlib\Debug\zlibstatic.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/pa3/Debug/nori.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/pa3/Debug/nori.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tinyformat;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\eigen;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Imath;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Iex;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Half;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\OpenEXR\IlmImf;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\OpenEXR\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tbb\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pcg32;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pugixml\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\hypothesis;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glfw\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glew\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glad\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\filesystem;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\example;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;NANOGUI_GLAD;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;NANOGUI_GLAD;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tinyformat;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\eigen;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Imath;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Iex;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Half;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\OpenEXR\IlmImf;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\OpenEXR\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tbb\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pcg32;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pugixml\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\hypothesis;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glfw\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glew\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glad\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\filesystem;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\example;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;NANOGUI_GLAD;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tinyformat;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\eigen;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Imath;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Iex;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Half;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\OpenEXR\IlmImf;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\OpenEXR\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tbb\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pcg32;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pugixml\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\hypothesis;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glfw\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glew\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glad\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\filesystem;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\example;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tinyformat;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\eigen;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Imath;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Iex;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Half;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\OpenEXR\IlmImf;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\OpenEXR\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tbb\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pcg32;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pugixml\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\hypothesis;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glfw\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glew\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glad\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\filesystem;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\example;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ext_build\tbb\Release\tbb_static.lib;ext_build\Release\pugixml.lib;ext_build\openexr\OpenEXR\IlmImf\Release\IlmImf.lib;ext_build\nanogui\Release\nanogui.lib;opengl32.lib;ext_build\zlib\Release\zlibstatic.lib;ext_build\openexr\IlmBase\Half\Release\Half.lib;ext_build\openexr\IlmBase\Imath\Release\Imath.lib;ext_build\openexr\IlmBase\IlmThread\Release\IlmThread.lib;ext_build\openexr\IlmBase\Iex\Release\Iex.lib;ext_build\zlib\Release\zlibstatic.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/pa3/Release/nori.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/pa3/Release/nori.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tinyformat;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\eigen;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Imath;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Iex;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Half;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\OpenEXR\IlmImf;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\OpenEXR\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tbb\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pcg32;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pugixml\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\hypothesis;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glfw\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glew\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glad\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\filesystem;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\example;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>UNIT_TEST;WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;NANOGUI_GLAD;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;NANOGUI_GLAD;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tinyformat;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\eigen;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Imath;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Iex;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Half;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\OpenEXR\IlmImf;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\OpenEXR\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tbb\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pcg32;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pugixml\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\hypothesis;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glfw\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glew\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glad\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\filesystem;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\example;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;NANOGUI_GLAD;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tinyformat;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\eigen;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Imath;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Iex;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Half;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\OpenEXR\IlmImf;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\OpenEXR\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tbb\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pcg32;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pugixml\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\hypothesis;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glfw\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glew\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glad\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\filesystem;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\example;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tinyformat;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\eigen;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Imath;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Iex;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Half;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\OpenEXR\IlmImf;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\OpenEXR\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tbb\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pcg32;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pugixml\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\hypothesis;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glfw\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glew\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glad\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\filesystem;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\example;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ext_build\tbb\Release\tbb_static.lib;ext_build\Release\pugixml.lib;ext_build\openexr\OpenEXR\IlmImf\Release\IlmImf.lib;ext_build\nanogui\Release\nanogui.lib;opengl32.lib;ext_build\zlib\Release\zlibstatic.lib;ext_build\openexr\IlmBase\Half\Release\Half.lib;ext_build\openexr\IlmBase\Imath\Release\Imath.lib;ext_build\openexr\IlmBase\IlmThread\Release\IlmThread.lib;ext_build\openexr\IlmBase\Iex\Release\Iex.lib;ext_build\zlib\Release\zlibstatic.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/pa3/Release/nori.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/pa3/Release/nori.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tinyformat;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\eigen;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Imath;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Iex;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Half;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\OpenEXR\IlmImf;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\OpenEXR\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tbb\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pcg32;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pugixml\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\hypothesis;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glfw\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glew\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glad\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\filesystem;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\example;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;NANOGUI_GLAD;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;NANOGUI_GLAD;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tinyformat;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\eigen;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Imath;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Iex;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Half;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\OpenEXR\IlmImf;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\OpenEXR\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tbb\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pcg32;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pugixml\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\hypothesis;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glfw\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glew\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glad\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\filesystem;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\example;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;NANOGUI_GLAD;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tinyformat;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\eigen;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Imath;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Iex;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Half;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\OpenEXR\IlmImf;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\OpenEXR\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tbb\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pcg32;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pugixml\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\hypothesis;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glfw\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glew\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glad\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\filesystem;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\example;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tinyformat;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\eigen;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Imath;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Iex;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Half;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\OpenEXR\IlmImf;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\OpenEXR\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tbb\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pcg32;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pugixml\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\hypothesis;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glfw\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glew\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glad\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\filesystem;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\example;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ext_build\tbb\MinSizeRel\tbb_static.lib;ext_build\MinSizeRel\pugixml.lib;ext_build\openexr\OpenEXR\IlmImf\MinSizeRel\IlmImf.lib;ext_build\nanogui\MinSizeRel\nanogui.lib;opengl32.lib;ext_build\zlib\MinSizeRel\zlibstatic.lib;ext_build\openexr\IlmBase\Half\MinSizeRel\Half.lib;ext_build\openexr\IlmBase\Imath\MinSizeRel\Imath.lib;ext_build\openexr\IlmBase\IlmThread\MinSizeRel\IlmThread.lib;ext_build\openexr\IlmBase\Iex\MinSizeRel\Iex.lib;ext_build\zlib\MinSizeRel\zlibstatic.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/pa3/MinSizeRel/nori.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/pa3/MinSizeRel/nori.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tinyformat;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\eigen;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Imath;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Iex;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Half;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\OpenEXR\IlmImf;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\OpenEXR\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tbb\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pcg32;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pugixml\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\hypothesis;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glfw\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glew\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glad\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\filesystem;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\example;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;NANOGUI_GLAD;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;NANOGUI_GLAD;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tinyformat;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\eigen;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Imath;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Iex;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Half;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\OpenEXR\IlmImf;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\OpenEXR\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tbb\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pcg32;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pugixml\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\hypothesis;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glfw\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glew\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glad\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\filesystem;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\example;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;NANOGUI_GLAD;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tinyformat;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\eigen;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Imath;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Iex;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Half;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\OpenEXR\IlmImf;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\OpenEXR\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tbb\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pcg32;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pugixml\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\hypothesis;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glfw\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glew\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glad\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\filesystem;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\example;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tinyformat;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\eigen;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Imath;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Iex;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\IlmBase\Half;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\openexr\OpenEXR\IlmImf;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\OpenEXR\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\config;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\tbb\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pcg32;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\pugixml\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\hypothesis;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glfw\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glew\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\src;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\glad\include;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\filesystem;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\ext\nanogui\ext\nanovg\example;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ext_build\tbb\RelWithDebInfo\tbb_static.lib;ext_build\RelWithDebInfo\pugixml.lib;ext_build\openexr\OpenEXR\IlmImf\RelWithDebInfo\IlmImf.lib;ext_build\nanogui\RelWithDebInfo\nanogui.lib;opengl32.lib;ext_build\zlib\RelWithDebInfo\zlibstatic.lib;ext_build\openexr\IlmBase\Half\RelWithDebInfo\Half.lib;ext_build\openexr\IlmBase\Imath\RelWithDebInfo\Imath.lib;ext_build\openexr\IlmBase\IlmThread\RelWithDebInfo\IlmThread.lib;ext_build\openexr\IlmBase\Iex\RelWithDebInfo\Iex.lib;ext_build\zlib\RelWithDebInfo\zlibstatic.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/pa3/RelWithDebInfo/nori.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/pa3/RelWithDebInfo/nori.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/nori_codebase/nori/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/nori_codebase/nori -BC:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/pa3 --check-stamp-file C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/pa3/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeCCompiler.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeCXXCompiler.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeRCCompiler.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/nori_codebase/nori/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='UnitTest|x64'">Building Custom Rule C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/nori_codebase/nori/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/nori_codebase/nori -BC:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/pa3 --check-stamp-file C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/pa3/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='UnitTest|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/nori_codebase/nori -BC:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/pa3 --check-stamp-file C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/pa3/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeCCompiler.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeCXXCompiler.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeRCCompiler.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='UnitTest|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeCCompiler.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeCXXCompiler.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeRCCompiler.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='UnitTest|x64'">C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='UnitTest|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/nori_codebase/nori/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/nori_codebase/nori -BC:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/pa3 --check-stamp-file C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/pa3/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeCCompiler.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeCXXCompiler.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeRCCompiler.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/nori_codebase/nori/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/nori_codebase/nori -BC:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/pa3 --check-stamp-file C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/pa3/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeCCompiler.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeCXXCompiler.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeRCCompiler.cmake;C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\3.19.0-rc3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\bbox.h" />
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\bitmap.h" />
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\block.h" />
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\bsdf.h" />
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\accel.h" />
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\camera.h" />
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\color.h" />
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\common.h" />
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\dpdf.h" />
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\frame.h" />
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\integrator.h" />
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\emitter.h" />
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\mesh.h" />
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\object.h" />
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\parser.h" />
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\proplist.h" />
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\ray.h" />
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\rfilter.h" />
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\sampler.h" />
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\scene.h" />
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\timer.h" />
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\transform.h" />
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\vector.h" />
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\warp.h" />
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\bitmap.cpp" />
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\block.cpp" />
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\accel.cpp" />
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\chi2test.cpp" />
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\common.cpp" />
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\diffuse.cpp" />
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\gui.cpp" />
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\independent.cpp" />
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\main.cpp" />
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\mesh.cpp" />
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\obj.cpp" />
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\object.cpp" />
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\parser.cpp" />
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\perspective.cpp" />
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\proplist.cpp" />
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\rfilter.cpp" />
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\scene.cpp" />
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\ttest.cpp" />
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\warp.cpp" />
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\microfacet.cpp" />
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\mirror.cpp" />
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\dielectric.cpp" />
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\normals.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ZERO_CHECK.vcxproj">
+      <Project>{BA9D0097-ED1A-3AA9-9CE8-CB060D9E1D62}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\Half\Half.vcxproj">
+      <Project>{F92D931B-7109-38FF-B82F-A20698117D00}</Project>
+      <Name>Half</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\Iex\Iex.vcxproj">
+      <Project>{65B7E1BB-1A8F-3CBE-BB7F-E80CFE7BB7CF}</Project>
+      <Name>Iex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\OpenEXR\IlmImf\IlmImf.vcxproj">
+      <Project>{C04756F6-918B-3D9E-91EC-ABC9CB7EB1FC}</Project>
+      <Name>IlmImf</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\IlmThread\IlmThread.vcxproj">
+      <Project>{4B130627-9C63-3706-9527-715B93DA63AB}</Project>
+      <Name>IlmThread</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\openexr\IlmBase\Imath\Imath.vcxproj">
+      <Project>{FEF83348-0872-3F46-9880-0724C42F31A8}</Project>
+      <Name>Imath</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\nanogui\nanogui.vcxproj">
+      <Project>{C5720600-3B9D-3FF0-9FC6-0D75A27C72AE}</Project>
+      <Name>nanogui</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\pugixml.vcxproj">
+      <Project>{CFC59AEB-B17C-31F2-8C28-638671859582}</Project>
+      <Name>pugixml</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\tbb\tbb_static.vcxproj">
+      <Project>{92E0FE8B-F53A-3CEF-A931-9F37C3A3E300}</Project>
+      <Name>tbb_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\pa3\ext_build\zlib\zlibstatic.vcxproj">
+      <Project>{40E54DE8-79F6-30E4-8894-DB24D82DDE7C}</Project>
+      <Name>zlibstatic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

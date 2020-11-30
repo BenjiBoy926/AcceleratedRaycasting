@@ -1,0 +1,20 @@
+^C:\USERS\CREAT\ONEDRIVE\DESKTOP\CODEY\SCHOOL\UCI\FALL2020\CS112\PA3\CMAKEFILES\D655FE4F32370C0BBC27B5DECCD75FA8\NANOGUI_RESOURCES.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DOUTPUT_C=nanogui_resources.cpp -DOUTPUT_H=nanogui_resources.h -DINPUT_FILES=C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/nori_codebase/nori/ext/nanogui/resources/Roboto-Bold.ttf,C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/nori_codebase/nori/ext/nanogui/resources/Roboto-Regular.ttf,C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/nori_codebase/nori/ext/nanogui/resources/entypo.ttf -P C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/nori_codebase/nori/ext/nanogui/resources/bin2c.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\CREAT\ONEDRIVE\DESKTOP\CODEY\SCHOOL\UCI\FALL2020\CS112\NORI_CODEBASE\NORI\EXT\NANOGUI\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/nori_codebase/nori -BC:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/pa3 --check-stamp-file C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/pa3/ext_build/nanogui/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

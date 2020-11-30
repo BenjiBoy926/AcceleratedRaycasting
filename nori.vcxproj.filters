@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\accel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\bitmap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\block.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\chi2test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\dielectric.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\diffuse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\gui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\independent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\mesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\microfacet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\mirror.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\normals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\obj.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\object.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\parser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\perspective.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\proplist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\rfilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\ttest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\src\warp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\accel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\bbox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\bitmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\block.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\bsdf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\color.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\dpdf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\emitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\frame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\integrator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\proplist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\ray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\rfilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\sampler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\transform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\include\nori\warp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\creat\OneDrive\Desktop\codey\school\uci\fall2020\cs112\nori_codebase\nori\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{7186486C-780A-3874-A01D-7010972D2F67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3D07A444-1CFC-3EF4-86B9-DAEB1977E19E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

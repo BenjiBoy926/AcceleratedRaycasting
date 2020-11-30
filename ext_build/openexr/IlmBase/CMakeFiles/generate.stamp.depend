@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.19/Modules/CPack.cmake
+C:/Program Files/CMake/share/cmake-3.19/Modules/CPackComponent.cmake
+C:/Program Files/CMake/share/cmake-3.19/Templates/CPackConfig.cmake.in
+C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/nori_codebase/nori/ext/openexr/IlmBase/CMakeLists.txt

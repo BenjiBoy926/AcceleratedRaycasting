@@ -1,0 +1,10 @@
+^C:\USERS\CREAT\ONEDRIVE\DESKTOP\CODEY\SCHOOL\UCI\FALL2020\CS112\NORI_CODEBASE\NORI\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/nori_codebase/nori -BC:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/pa3 --check-stamp-file C:/Users/creat/OneDrive/Desktop/codey/school/uci/fall2020/cs112/pa3/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
